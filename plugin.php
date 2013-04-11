@@ -17,7 +17,8 @@
 /** Load textdomain for translation */
 load_plugin_textdomain( 'gmm', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 
-define( 'GMM_PLUGIN_DIR', dirname( __FILE__ ) );
+define( 'GMM_LIB_DIR', dirname( __FILE__ ) . '/lib/' );
+define( 'GMM_LIB_URL', plugins_url( '/lib/', __FILE__ ) );
 
 
 /* Prevent direct access to the plugin */
@@ -81,13 +82,13 @@ add_action( 'genesis_init', 'gnma_init', 15 );
 function gnma_init() {
 
     if ( is_admin ( ) )
-        require_once( GMM_PLUGIN_DIR . '/admin.php');
+        require_once( GMM_LIB_DIR . 'admin.php');
 
     else
-        require_once( GMM_PLUGIN_DIR . '/structure.php');
+        require_once( GMM_LIB_DIR . 'structure.php');
         
     register_nav_menus(
-    	array( 'header-menu' => __( 'Mobile Menu', 'gmm' ) )
+    	array( 'gmm-mobile-menu' => __( 'Mobile Menu', 'gmm' ) )
     );
 
 }

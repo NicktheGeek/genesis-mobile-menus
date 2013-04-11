@@ -41,11 +41,19 @@ function gmm_theme_settings_box() {
     </p>
 
     <p><?php _e( "Mobile Menu Type", 'gmm' ); ?>
-        <select name="<?php echo GENESIS_SETTINGS_FIELD; ?>[gmm_menu]" id="<?php echo GENESIS_SETTINGS_FIELD; ?>[gmm_menu]">
-        	<option value="" <?php selected( '', genesis_get_option( 'gmm_menu' ) ); ?>><?php _e( "Please Select Mobile Menu Type", 'gmm' ); ?></option>
-            <option value="gmm_select" <?php selected( 'gmm_select', genesis_get_option( 'gmm_menu' ) ); ?>><?php _e( "Select Menu", 'gmm' ); ?></option>
-            <option value="gmm_collapse" <?php selected( 'gmm_collapse', genesis_get_option( 'gmm_menu' ) ); ?>><?php _e( "Collapsed Menu", 'gmm' ); ?></option>
-            <option value="gmm_alternate" <?php selected( 'gmm_alternate', genesis_get_option( 'gmm_menu' ) ); ?>><?php _e( "Alternate Menu", 'gmm' ); ?></option>
+        <select name="<?php echo GENESIS_SETTINGS_FIELD; ?>[gmm_menu_type]" id="<?php echo GENESIS_SETTINGS_FIELD; ?>[gmm_menu_type]">
+        	<option value="" <?php selected( '', genesis_get_option( 'gmm_menu_type' ) ); ?>><?php _e( "Please Select Mobile Menu Type", 'gmm' ); ?></option>
+            <option value="gmm_select" <?php selected( 'gmm_select', genesis_get_option( 'gmm_menu_type' ) ); ?>><?php _e( "Select Menu", 'gmm' ); ?></option>
+            <option value="gmm_collapse" <?php selected( 'gmm_collapse', genesis_get_option( 'gmm_menu_type' ) ); ?>><?php _e( "Collapsed Menu", 'gmm' ); ?></option>
+            <option value="gmm_alternate" <?php selected( 'gmm_alternate', genesis_get_option( 'gmm_menu_type' ) ); ?>><?php _e( "Alternate Menu", 'gmm' ); ?></option>
+        </select>
+    </p>
+    
+    <p><?php _e( "Mobile Menu Position", 'gmm' ); ?>
+        <select name="<?php echo GENESIS_SETTINGS_FIELD; ?>[gmm_menu_position]" id="<?php echo GENESIS_SETTINGS_FIELD; ?>[gmm_menu_position]">
+        	<option value="" <?php selected( '', genesis_get_option( 'gmm_menu_type' ) ); ?>><?php _e( "Please Select Mobile Menu Position", 'gmm' ); ?></option>
+            <option value="gmm_primary" <?php selected( 'gmm_primary', genesis_get_option( 'gmm_menu_position' ) ); ?>><?php _e( "Replace Primary Menu", 'gmm' ); ?></option>
+            <option value="gmm_secondary" <?php selected( 'gmm_secondary', genesis_get_option( 'gmm_menu_position' ) ); ?>><?php _e( "Replace Secondary Menu", 'gmm' ); ?></option>
         </select>
     </p>
                     

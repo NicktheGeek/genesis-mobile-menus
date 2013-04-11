@@ -1,0 +1,19 @@
+.gmm-menu {
+	display: none;
+}
+
+.top-level-parent {
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	
+	.gmm-menu {
+		display: block;
+	}
+	
+	.genesis-nav-menu {
+		display: none;
+	}
+	
+}
