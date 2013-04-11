@@ -1,4 +1,4 @@
-# Genesis Mobil Menu plugin
+# Genesis Mobile Menu plugin
 
 **Contributors**:
 
