@@ -6,6 +6,10 @@
 	font-weight: bold;
 }
 
+.gmm-collapse-menu {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	
 	.genesis-nav-menu {

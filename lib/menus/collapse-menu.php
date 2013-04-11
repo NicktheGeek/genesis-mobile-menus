@@ -27,12 +27,14 @@ function gmm_collapse_menu( $menu_position ){
 	switch( $menu_position ){
 		case 'gmm_primary' :
 			add_filter( 'genesis_do_nav'   , 'gmm_do_mobile_collapse_nav', 99 , 3 );
-			add_filter( 'genesis_do_subnav', '__return_false'             , 99     );
+			if( ! genesis_get_option( 'gmm_fail_safe' ) ) 
+				add_filter( 'genesis_do_subnav', '__return_false', 99 );
 			
 			break;
 		case 'gmm_secondary' :
 			add_filter( 'genesis_do_subnav', 'gmm_do_mobile_collapse_subnav', 99, 3 );
-			add_filter( 'genesis_do_nav'   , '__return_false'                , 99    );
+			if( ! genesis_get_option( 'gmm_fail_safe' ) ) 
+				add_filter( 'genesis_do_nav'   , '__return_false', 99 );
 			
 			break;
 	}

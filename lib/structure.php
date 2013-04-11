@@ -49,5 +49,5 @@ function gmm_maybe_load_menu() {
 
 add_action( 'wp_enqueue_scripts', 'gmm_maybe_enqueue_fail_safe' );
 function gmm_maybe_enqueue_fail_safe() {
-	wp_enqueue_style( 'gmm_fail_safe_style', GMM_LIB_URL . 'css/fail-safe.css' , array(), '0.1', 'screen' );
+	wp_enqueue_style( 'gmm_style', GMM_LIB_URL . 'css/gmm-menu.css' , array(), '0.1', 'screen' );
 }
