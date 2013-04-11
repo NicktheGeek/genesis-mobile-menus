@@ -11,6 +11,15 @@
  add_action( 'wp_enqueue_scripts', 'gmm_enqueue_select_scripts' );
 function gmm_enqueue_select_scripts() {
 		wp_enqueue_script( 'gmm_collapse_script', GMM_LIB_URL . 'js/nav.toggle.js' , array( 'jquery' ), '0.1', true );
+		
+		$translation_array = array( 
+			'show_text' => __( 'Show Menu' ), 
+			'hide_text' => __( 'Hide Menu' )
+		);
+		
+		wp_localize_script( 'gmm_collapse_script', 'gmm_text', $translation_array );
+
+
 }
 
  
