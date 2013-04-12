@@ -22,7 +22,7 @@ function gmm_select_menu( $menu_position ){
 			
 			break;
 		case 'gmm_secondary' :
-			add_filter( 'genesis_do_subnav', 'gmm_do_mobile_select_nav', 99, 3 );
+			add_filter( 'genesis_do_subnav', 'gmm_do_mobile_select_subnav', 99, 3 );
 			if( ! genesis_get_option( 'gmm_fail_safe' ) ) 
 				add_filter( 'genesis_do_nav'   , '__return_false', 99 );
 			

@@ -67,7 +67,7 @@ function gmm_do_mobile_collapse_nav( $nav_output, $nav, $args ) {
  * @since 1.0.0
  * @version 1.0.0
  */
-function gmm_do_mobile_select_subnav() {
+function gmm_do_mobile_collapse_subnav() {
 	
 	$args = array(
 		'theme_location' => 'gmm-mobile-menu',	

@@ -1,10 +1,10 @@
 === Plugin Name ===
-Contributors: Nick_theGeek, dreamwhisper
+Contributors: Nick_theGeek
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RGUXZDAKT7BDW
 Tags: genesis, genesiswp, studiopress, menu
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 0.3.0
+Stable tag: 1.1.0
 
 Creates mobile menu options for Genesis themes
 
