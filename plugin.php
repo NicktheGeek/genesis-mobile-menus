@@ -3,7 +3,7 @@
 /*
   Plugin Name: Genesis Mobile Menu Beta
   Plugin URI: http://DesignsByNicktheGeek.com
-  Version: 0.1
+  Version: 0.1.1
   Author: Nick_theGeek
   Author URI: http://DesignsByNicktheGeek.com
   Description: Add mobile menu to Genesis child themes

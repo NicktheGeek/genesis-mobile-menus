@@ -6,6 +6,7 @@
 
 /** checks to see if the jetpack mobile function is availabel then returns that response, otherwise returns the wp_is_mobile() response */
 function gmm_is_mobile() {
+
 	if( function_exists('jetpack_is_mobile') )
 		return jetpack_is_mobile();
 	
@@ -16,6 +17,9 @@ function gmm_is_mobile() {
 add_action( 'template_redirect', 'gmm_maybe_load_menu' );
 function gmm_maybe_load_menu() {
 	if( ! gmm_is_mobile() && ! genesis_get_option( 'gmm_fail_safe' ) )
+		return;
+		
+	if( ! has_nav_menu( 'gmm-mobile-menu' ) )
 		return;
 		
 	add_action( 'wp_enqueue_scripts', 'gmm_maybe_enqueue_fail_safe' );
